@@ -5,7 +5,7 @@ import starlight from "@astrojs/starlight";
 // https://astro.build/config
 export default defineConfig({
   site: "https://djblackberry64.github.io",
-  base: "/java-space-tutorial",
+  base: "/space-tutorial-java/",
   integrations: [
     starlight({
       title: "My Docs",
