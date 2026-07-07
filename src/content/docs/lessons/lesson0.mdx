@@ -1,0 +1,43 @@
+---
+title: Lesson 0 - How does Java work?
+description: An introduction to the Java programming language
+---
+
+## Java intro
+
+### What do you need to know?
+
+- In Java, your code must reside inside a class (meaning inside the {} of the code block containing the keyword "class").
+- Every command must end with a semicolon (;)
+
+### Setup
+
+Java doesn't come preinstalled on most systems. In order to use it, you'll have to install the necessary tools.
+
+I will list the primary methods for installation on Linux and Windows:
+
+- Linux:
+  - Debian-based: `sudo apt install default-jdk`
+  - Fedora-based: [Link to tutorial](https://docs.fedoraproject.org/en-US/quick-docs/installing-java/)
+  - Arch-based: you can figure this out on your own btw ;)
+- Windows: [Link to tutorial](https://learn.microsoft.com/en-us/windows/dev-environment/java)
+
+### Java Internals
+
+Java code doesn't just run on your computer. It needs tools to run.
+
+Java code first gets translated to Bytecode through the Java compiler(javac). Next, the bytecode gets interpreted and executed by the Java Virtual Machine (JVM).
+**Java code > Bytecode > Interpretation + Execution**
+
+#### What you need to do
+
+To run your code you just need to type `java <your-code-name>.java` since Java 11.
+
+Before you would have to type `javac <your-code-name>.java` and `java <your-code-name>` to run your code.
+
+The first command just batches these two commands together (1st java code to bytecode, 2nd bytecode interpretation+execution).
+
+#### Technical Jargon
+
+- Java Runtime Environment (JRE): provides the environment and libraries for the JVM to execute the bytecode.
+- Java Development Kit (JDK): a packet that includes all tools necessary to execute Java code (compiler, JVM, JRE)
