@@ -3,34 +3,48 @@ title: Hey there! Yeah you!
 description: Explore Java with this curriculum.
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Thanks for exploring my java course!
+  tagline: Thanks for exploring my programming course
   image:
     file: ../../assets/houston.webp
-  actions:
-    - text: 🪏 Get Started
-      link: ./lessons/lesson0
-      icon: right-arrow
 ---
 
-import { Card, CardGrid } from "@astrojs/starlight/components";
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
 ## Next steps
 
+<LinkCard
+  title="Python"
+  description="The darling of starter languages. Choose me for an easy start."
+  href="./python"
+></LinkCard>
+<br />
+<LinkCard
+  title="Java"
+  description="I've been around since the 90s. Choose me if you want outstanding stability."
+  href="./java"
+></LinkCard>
+<br />
+<LinkCard
+  title="Kotlin"
+  description="I'm the newest of the bunch. Choose me if you want a modern approach."
+  href="./kotlin"
+></LinkCard>
+<hr />
 <CardGrid stagger>
 
 <Card title="Multi-language" icon="translate">
   Coming soon...
 </Card>
 
-  <Card title="Feedback appreciated" icon="comment">
-    Leave your feedback [here]()
-  </Card>
-  <Card title="Support this project" icon="heart">
-    If you like my work, you can support me on <br />
-    [Ko-fi](https://ko-fi.com/djblackberry64)
-  </Card>
-  <Card title="I keep you updated" icon="open-book">
-    Learn more at [The Stellar Fundamentals
-    Blog](https://djblackberry64.github.io/announcement-blog/).
-  </Card>
+<Card title="Feedback appreciated" icon="comment">
+  Leave your feedback [here]()
+</Card>
+<Card title="Support this project" icon="heart">
+  If you like my work, you can support me on <br />
+  [Ko-fi](https://ko-fi.com/djblackberry64)
+</Card>
+<Card title="I keep you updated" icon="open-book">
+  Learn more at [The Stellar Fundamentals
+  Blog](https://djblackberry64.github.io/announcement-blog/).
+</Card>
 </CardGrid>

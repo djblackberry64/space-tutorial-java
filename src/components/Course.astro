@@ -1,6 +1,17 @@
 ---
 import {Code, LinkButton, Icon} from '@astrojs/starlight/components';
-const {downloadUrl, solutionCode, codeLanguage = "java", language = "en", filename } = Astro.props;
+const {downloadUrl="", solutionCode="", codeLanguage = "java", language = "en", filename="" } = Astro.props;
+
+type Language = "en" | "de";
+type CodeLanguage = "java" | "kotlin" | "python";
+
+interface Props {
+  downloadUrl?: string,
+  solutionCode?: string,
+  codeLanguage?: CodeLanguage,
+  language?: Language,
+  filename?: string,
+}
 
 const defaultNames = {
   java: "Main.java",
@@ -9,7 +20,8 @@ const defaultNames = {
 }
 
 const individualFilename = filename || defaultNames[codeLanguage];
-const finalDownloadUrl = `${import.meta.env.BASE_URL}/${downloadUrl}`; // Fix for routing problem, double slashes + base url needed for correct routing
+const finalDownloadUrl = `${import.meta.env.BASE_URL}/${downloadUrl}`;
+// Fix for routing problem, double slashes + base url needed for correct routing
 ---
 <LinkButton href={finalDownloadUrl} download="" icon="external"
   iconPlacement="start">

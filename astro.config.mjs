@@ -8,7 +8,8 @@ export default defineConfig({
   base: "/space-tutorial-java/",
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "Programming language introduction",
+      customCss: ["./src/styles/custom.css"],
 
       social: [
         {

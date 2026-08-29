@@ -1,0 +1,22 @@
+.sl-link-card {
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sl-link-card:hover,
+.sl-link-card:focus-within {
+  transform: translateY(-5px);
+  box-shadow:
+    0 12px 24px -6px rgba(0, 0, 0, 0.25),
+    0 4px 8px -4px rgba(0, 0, 0, 0.15);
+}
+:root[data-path*="/python"],
+[data-path*="/python"] {
+}
+:root[data-path*="/java"],
+[data-path*="/java"] {
+}
+:root[data-path*="/kotlin"],
+[data-path*="/kotlin"] {
+}
