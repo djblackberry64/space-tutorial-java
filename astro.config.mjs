@@ -20,11 +20,19 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Course",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { autogenerate: { directory: "lessons" } },
-          ],
+          label: "Python",
+          items: [{ autogenerate: { directory: "python" } }],
+          collapsed: true,
+        },
+        {
+          label: "Java",
+          items: [{ autogenerate: { directory: "java" } }],
+          collapsed: true,
+        },
+        {
+          label: "Kotlin",
+          items: [{ autogenerate: { directory: "kotlin" } }],
+          collapsed: true,
         },
         {
           label: "Reference",
