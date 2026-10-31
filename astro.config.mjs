@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightGiscus from "starlight-giscus";
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,7 +11,14 @@ export default defineConfig({
     starlight({
       title: "Programming language introduction",
       customCss: ["./src/styles/custom.css"],
-
+      plugins: [
+        starlightGiscus({
+          repo: "djblackberry64/space-tutorial-java",
+          repoId: "R_kgDOTHpy7A",
+          category: "General",
+          categoryId: "DIC_kwDOTHpy7M4DKFv5",
+        }),
+      ],
       social: [
         {
           icon: "github",
