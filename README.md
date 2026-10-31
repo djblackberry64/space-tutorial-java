@@ -41,6 +41,8 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 
 ## "I wanna use the assets in this course for commercial purposes"
 
+The creative assets: e.g. the self-shot pictures, self-made graphics, the added texts and likewise are licensed separately under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en)
+
 Hey I don't mind you using the assets for your non-commercial projects.<br />
 
 However, if you wanna use them commercially visit [Ko-fi](https://ko-fi.com/djblackberry64) for a commercial license.<br />
